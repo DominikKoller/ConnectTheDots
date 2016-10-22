@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="1" Version="0.39">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="2" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="3" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <NugetDependency Id="4" Location="VL.Core" Version="0.35.21" />
+  <Patch Id="9">
+    <Canvas Id="10" DefaultCategory="VVVV.Value">
+      <Node Bounds="112,147" Id="11">
+        <p:NodeReference>
+          <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+          <Choice Kind="ClassType, HasMasterPatchFlag, DefinitionFlag" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="12" Name="Gravity" Category="Value" IsGeneric="true">
+          <Patch Id="13" Name="Create" />
+          <Patch Id="14" Name="Update">
+            <Pin Id="15" Name="Goal" Kind="InputPin" Bounds="12,0">
+              <p:TypeAnnotation ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Float64" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Canvas Id="17" Position="112,147">
+            <ControlPoint Id="18" Bounds="375,9" />
+            <Pad Id="20" SlotId="48" Bounds="443,37">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="21" SlotId="49" Bounds="362,168">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="373,70,35,13" Id="24">
+              <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="-" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="25" Name="Input" Kind="InputPin" />
+              <Pin Id="26" Name="Input 2" Kind="InputPin" />
+              <Pin Id="27" Name="Enabled" Kind="EnabledPin" />
+              <Pin Id="28" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="359,191,35,13" Id="29">
+              <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="+" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="30" Name="Input" Kind="InputPin" />
+              <Pin Id="31" Name="Input 2" Kind="InputPin" />
+              <Pin Id="32" Name="Enabled" Kind="EnabledPin" />
+              <Pin Id="33" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="372,133,35,13" Id="34">
+              <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="* (Scale)" />
+              </p:NodeReference>
+              <Pin Id="35" Name="Input" Kind="InputPin" />
+              <Pin Id="36" Name="Scalar" Kind="InputPin" />
+              <Pin Id="37" Name="Enabled" Kind="EnabledPin" />
+              <Pin Id="38" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="337,308,35,13" Id="40">
+              <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="+" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="41" Name="Input" Kind="InputPin" />
+              <Pin Id="42" Name="Input 2" Kind="InputPin" />
+              <Pin Id="43" Name="Enabled" Kind="EnabledPin" />
+              <Pin Id="44" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="45" SlotId="48" Bounds="306,253">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="46" SlotId="49" Bounds="452,302">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="47" SlotId="48" Bounds="336,348">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="360,249,35,13" Id="59">
+              <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="*" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="62" Name="Input" Kind="InputPin" />
+              <Pin Id="63" Name="Input 2" Kind="InputPin" />
+              <Pin Id="64" Name="Enabled" Kind="EnabledPin" />
+              <Pin Id="65" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="73" Bounds="623,18" />
+            <Pad Id="8" SlotId="23" Bounds="417,226">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="16" SlotId="53" Bounds="459,109">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="19" SlotId="53" Bounds="621,68">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="77" SlotId="23" Bounds="779,72">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="81" Bounds="778,20" />
+            <ControlPoint Id="102" Bounds="217,342" />
+          </Canvas>
+          <Link Id="22" Ids="15,18" IsHidden="true" />
+          <Slot Id="48" Name="Position" />
+          <Slot Id="49" Name="Velocity" />
+          <Link Id="50" Ids="20,26" />
+          <Link Id="51" Ids="18,25" />
+          <Link Id="52" Ids="28,35" />
+          <Link Id="54" Ids="38,31" />
+          <Link Id="55" Ids="21,30" />
+          <Link Id="57" Ids="45,41" />
+          <Link Id="60" Ids="44,47" />
+          <Link Id="67" Ids="33,62" />
+          <Link Id="68" Ids="65,46" />
+          <Link Id="69" Ids="65,42" />
+          <Patch Id="75" Name="SetSpeed">
+            <Pin Id="76" Name="Speed" Kind="InputPin" Bounds="574,141" />
+          </Patch>
+          <Link Id="78" Ids="76,73" IsHidden="true" />
+          <Slot Id="23" Name="Decay" />
+          <Link Id="39" Ids="8,63" />
+          <Slot Id="53" Name="Speed" />
+          <Link Id="56" Ids="16,36" />
+          <Link Id="58" Ids="73,19" />
+          <Patch Id="104" Name="SetDecay">
+            <Pin Id="105" Name="Decay" Kind="InputPin" Bounds="780,28" />
+          </Patch>
+          <Link Id="106" Ids="81,77" />
+          <Link Id="107" Ids="105,81" IsHidden="true" />
+          <Patch Id="108" Name="GetPosition">
+            <Pin Id="109" Name="Position" Kind="OutputPin" Bounds="228,327" />
+          </Patch>
+          <Link Id="110" Ids="45,102" />
+          <Link Id="111" Ids="102,109" IsHidden="true" />
+          <ProcessDefinition Id="5">
+            <Fragment Id="6" Patch="13" Enabled="true" />
+            <Fragment Id="74" Patch="75" Enabled="true" />
+            <Fragment Id="112" Patch="104" Enabled="true" />
+            <Fragment Id="7" Patch="14" Enabled="true" />
+            <Fragment Id="113" Patch="108" Enabled="true" />
+          </ProcessDefinition>
+          <p:Info Summary="Basic stateful template with one in/out" />
+        </Patch>
+      </Node>
+      <Node Bounds="114,192" Id="61">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+          <Choice Kind="ClassType, HasMasterPatchFlag, DefinitionFlag" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="66" Name="Gravity">
+          <Canvas Id="70" Position="-35,5">
+            <Node Bounds="334,217,80,13" Id="71">
+              <p:NodeReference LastCategoryFullName="Value" LastSymbolSource="VVVV.Value.Gravity.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Gravity" />
+                <CategoryReference Kind="Category" Name="Value" NeedsToBeDirectParent="true" IsGlobal="true" />
+              </p:NodeReference>
+              <Pin Id="79" Name="Speed" Kind="InputPin" />
+              <Pin Id="80" Name="SetSpeed Enabled" Kind="EnabledPin" />
+              <Pin Id="82" Name="Decay" Kind="InputPin" />
+              <Pin Id="114" Name="SetDecay Enabled" Kind="EnabledPin" />
+              <Pin Id="72" Name="Goal" Kind="InputPin" />
+              <Pin Id="115" Name="Update Enabled" Kind="EnabledPin" />
+              <Pin Id="116" Name="Position" Kind="OutputPin" />
+              <NodeFragment Id="83" NameOfOperation="Create" />
+              <NodeFragment Id="85" NameOfOperation="SetSpeed" />
+              <NodeFragment Id="117" NameOfOperation="SetDecay" />
+              <NodeFragment Id="84" NameOfOperation="Update" />
+              <NodeFragment Id="118" NameOfOperation="GetPosition" />
+            </Node>
+            <ControlPoint Id="86" Bounds="420,188" />
+            <ControlPoint Id="88" Bounds="366,186" />
+            <ControlPoint Id="89" Bounds="310,187" />
+            <ControlPoint Id="119" Bounds="337,274" />
+          </Canvas>
+          <Patch Id="90" Name="Create" />
+          <Patch Id="91" Name="Update">
+            <Pin Id="92" Name="Goal" Kind="InputPin" Bounds="325,171" />
+            <Pin Id="93" Name="Decay" Kind="InputPin" Bounds="389,175" />
+            <Pin Id="94" Name="Speed" Kind="InputPin" Bounds="460,167" />
+            <Pin Id="120" Name="Position" Kind="OutputPin" Bounds="337,274" />
+          </Patch>
+          <ProcessDefinition Id="95">
+            <Fragment Id="96" Patch="90" Enabled="true" />
+            <Fragment Id="97" Patch="91" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="98" Ids="86,72" />
+          <Link Id="99" Ids="92,86" IsHidden="true" />
+          <Link Id="100" Ids="88,82" />
+          <Link Id="101" Ids="93,88" IsHidden="true" />
+          <Link Id="103" Ids="94,89" IsHidden="true" />
+          <Link Id="121" Ids="89,79" />
+          <Link Id="122" Ids="116,119" />
+          <Link Id="123" Ids="119,120" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <DocumentDependency Id="87" Location="./VL.Value.Gravity.vl" />
+  <p:Info Authors="vvvv group">
+    <p:LicenseUrl>https://www.gnu.org/licenses/lgpl.html</p:LicenseUrl>
+    <p:ProjectUrl>http://vvvv.org/</p:ProjectUrl>
+  </p:Info>
+</Document>
